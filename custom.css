@@ -1,0 +1,3 @@
+button.enabled-book-button:nth-child(5), button.disabled-book-button:nth-child(5) {
+  display: none;
+}
