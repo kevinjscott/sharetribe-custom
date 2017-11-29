@@ -1,4 +1,7 @@
-window.onload = function() {
+window.addEventListener('load', tweakSharetribe);
+
+
+function tweakSharetribe() {
 
   /* Hide calendly URL and add a booking button instead */
 
