@@ -1,8 +1,6 @@
-window.addEventListener('load', tweakSharetribe);
-
+window.addEventListener('DOMContentLoaded', tweakSharetribe);
 
 function tweakSharetribe() {
-
   /* Hide calendly URL and add a booking button instead */
 
   var rows = document.getElementsByClassName("col-12");
@@ -16,13 +14,12 @@ function tweakSharetribe() {
 
   var order_button = document.getElementsByClassName('enabled-book-button')[0];
   if (order_button != null && calendlyURL != null) {
-    order_button.insertAdjacentHTML( 'beforeBegin', '<button class="enabled-book-button" href="" onclick="Calendly.showPopupWidget(\'' + calendlyURL +'\');return false">Availability and reservation</button>' );
+    order_button.insertAdjacentHTML( 'beforeBegin', '<button class="enabled-book-button" href="" onclick="Calendly.showPopupWidget(\'' + calendlyURL +'\');return false">Availability AND reservation</button>' );
   }
 
   /* Add an instruction text to the listing form */
 
-
-    var infotext = 'If you want to allow hourly booking, set up an event for free at <a href="http://calendly.com" target="_blank">Calendly.com </a> and put here the link to that calendly event.'
+  var infotext = 'If you want to allow hourly booking, set up an event for free at <a href="http://calendly.com" target="_blank">Calendly.com </a> and put here the link to that calendly event.'
   var labels = document.getElementsByTagName('LABEL');
   for (var i = 0; i < labels.length; i++) {
       if (labels[i].textContent.match(/calendly link/i)) {
