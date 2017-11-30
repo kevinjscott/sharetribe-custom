@@ -2,6 +2,6 @@ button.enabled-book-button:nth-child(5), button.disabled-book-button:nth-child(5
   display: none;
 }
 
-.quantity-wrapper.input-group {
+div.quantity-wrapper {
   display: none;
 }
