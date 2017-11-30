@@ -14,7 +14,7 @@ function tweakSharetribe() {
 
   var order_button = document.getElementsByClassName('enabled-book-button')[0];
   if (order_button != null && calendlyURL != null) {
-    order_button.insertAdjacentHTML( 'beforeBegin', '<button class="enabled-book-button" href="" onclick="Calendly.showPopupWidget(\'' + calendlyURL +'\');return false">Availability AND reservation</button>' );
+    order_button.insertAdjacentHTML( 'beforeBegin', '<button class="enabled-book-button" href="" onclick="Calendly.showPopupWidget(\'' + calendlyURL +'\');return false">Select date and time</button>' );
   }
 
   /* Add an instruction text to the listing form */
