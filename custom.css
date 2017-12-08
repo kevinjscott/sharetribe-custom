@@ -1,4 +1,4 @@
-// hide the Sharetribe "request" button (we're showing "select date and time" button instead)
+/* hide the Sharetribe "request" button (we're showing "select date and time" button instead) */
 button.enabled-book-button:nth-child(5), button.disabled-book-button:nth-child(5) {
   display: none;
 }
@@ -7,7 +7,7 @@ div.quantity-wrapper {
   display: none;
 }
 
-// hide prices
+/* hide prices */
 .fluid-thumbnail-grid-image-price-container,
 .listing-price-amount,
 .listing-price-quantity {
